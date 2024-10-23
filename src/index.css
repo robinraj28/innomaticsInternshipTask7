@@ -1,0 +1,73 @@
+/* Base styles for the navigation bar */
+nav {
+  background-color: #550322;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+
+nav a {
+  color: black;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  padding: 5px;
+}
+
+nav a:hover {
+  color: rgb(241, 200, 146);
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+/* Responsive Container for page content */
+.container {
+  text-align: center;
+  padding: 50px;
+  font-size: 24px;
+}
+
+/* Active link styling */
+.active {
+  color: #0a43ad;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Media Query for tablet devices (768px and below) */
+@media (max-width: 768px) {
+  nav {
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  nav a {
+      margin: 10px 0;
+      font-size: 16px;
+  }
+
+  .container {
+      padding: 30px;
+      font-size: 20px;
+  }
+}
+
+/* Media Query for mobile devices (480px and below) */
+@media (max-width: 480px) {
+  nav {
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  nav a {
+      margin: 5px 0;
+      font-size: 14px;
+  }
+
+  .container {
+      padding: 20px;
+      font-size: 18px;
+  }
+}
